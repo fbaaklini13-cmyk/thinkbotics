@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Thinkbotics — ROI Calculator</title>
+<meta name="description" content="Thinkbotics builds trusted AI automations for customer support and appointment setting."/>
+<link rel="icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"/>
+<meta property="og:title" content="Thinkbotics — ROI Calculator"/>
+<meta property="og:description" content="Thinkbotics builds trusted AI automations for customer support and appointment setting."/>
+<meta property="og:type" content="website"/>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"Thinkbotics",
+ "url":"https://thinkbotics.example",
+ "logo":"logo.svg",
+ "contactPoint": [{"@type":"ContactPoint","contactType":"sales","email":"thinkbotics1@gmail.com","telephone":"+96181082562"}]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><img src="logo.png" alt="Thinkbotics logo"/><span>Thinkbotics</span></a>
+    <button class="mobile-toggle" aria-label="Open menu">☰</button>
+<nav class="nav" aria-label="Primary" class="nav-links"><a href="index.html">Home</a> <a href="services.html">Services</a> <a href="pricing.html">Pricing</a> <a  href="process.html">Process</a> <a  href="about.html">About</a> <a  href="faq.html">FAQ</a> <a  href="contact.html">Contact</a></nav>
+    <div class="cta-group"><a class="btn primary" href="https://calendly.com/fbaaklini13/30min">Book a Demo</a></div>
+  </div>
+</header>
+<main>
+<section class="section"><div class="container">
+  <div class="section-head reveal"><h2>ROI Calculator</h2><p>Estimate hours and savings from automation.</p></div>
+  <form id="roi-form" class="contact-form">
+    <label>Team size<input id="roi-team" type="number" min="0" value="5"></label>
+    <label>Tickets / calls per day<input id="roi-tickets" type="number" min="0" value="60"></label>
+    <label>Avg handle time (minutes)<input id="roi-aht" type="number" min="0" value="5"></label>
+    <label>Avg hourly rate (USD)<input id="roi-rate" type="number" min="0" value="20"></label>
+    <label>Automations (1 or 3–5)<input id="roi-count" type="number" min="1" value="1"></label>
+  </form>
+  <div class="grid" style="grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1rem">
+    <article class="card"><h3>Hours saved / month</h3><p><strong id="roi-hours">0</strong></p></article>
+    <article class="card"><h3>Estimated $ saved</h3><p><strong>$<span id="roi-savings">0</span></strong></p></article>
+    <article class="card"><h3>Monthly plan</h3><p><strong>$<span id="roi-monthly">0</span></strong></p></article>
+    <article class="card"><h3>Payback (months)</h3><p><strong id="roi-payback">—</strong></p></article>
+  </div>
+  <div style="margin-top:1.2rem"> <a class="btn outline" href="contact.html">Talk to Sales</a></div>
+</div></section>
+</main>
+
+
+<footer class="tbx-footer">
+  <div class="container f-wrap">
+    <div class="f-brand"><img src="logo.png" alt="Thinkbotics logo"> 
+      <div class="f-logo">Thinkbotics</div>
+      <div class="f-tag">Automation that books, replies, and reduces errors. <a href="mailto:thinkbotics1@gmail.com">thinkbotics1@gmail.com</a></div>
+    </div>
+    <nav class="f-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="process.html">Process</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="f-cta">
+      <a class="btn btn-primary" href="https://calendly.com/fbaaklini13/30min">Book a Demo</a>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <span>© 2025 Thinkbotics</span>
+    <span>All rights reserved</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+// /* mobile nav toggle */
+(function(){
+  var btn = document.querySelector('.mobile-toggle');
+  var nav = document.querySelector('header nav');
+  if(btn && nav){
+    btn.addEventListener('click', function(){
+      nav.classList.toggle('open');
+      document.body.classList.toggle('menu-open');
+    });
+  }
+})();
+</script>
+</body>
+</html>

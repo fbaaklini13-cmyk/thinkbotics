@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Thinkbotics — Services</title>
+<meta name="description" content="Thinkbotics builds trusted AI automations for customer support and appointment setting."/>
+<link rel="icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"/>
+<meta property="og:title" content="Thinkbotics — Services"/>
+<meta property="og:description" content="Thinkbotics builds trusted AI automations for customer support and appointment setting."/>
+<meta property="og:type" content="website"/>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"Thinkbotics",
+ "url":"https://thinkbotics.example",
+ "logo":"logo.svg",
+ "contactPoint": [{"@type":"ContactPoint","contactType":"sales","email":"thinkbotics1@gmail.com","telephone":"+96181082562"}]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><img src="logo.png" alt="Thinkbotics logo"/><span>Thinkbotics</span></a>
+    <button class="mobile-toggle" aria-label="Open menu">☰</button>
+<nav class="nav" aria-label="Primary" class="nav-links"><a href="index.html">Home</a> <a href="services.html">Services</a> <a href="pricing.html">Pricing</a> <a  href="process.html">Process</a> <a  href="about.html">About</a> <a  href="faq.html">FAQ</a> <a  href="contact.html">Contact</a></nav>
+    <div class="cta-group"><a class="btn primary" href="https://calendly.com/fbaaklini13/30min">Book a Demo</a></div>
+  </div>
+</header>
+<main>
+<section class="section"><div class="container">
+  <div class="section-head reveal"><h2>Services</h2><p>Three focused categories, built for outcomes.</p></div>
+  <div class="grid services-grid">
+    <article class="card reveal"><div class="icon"></div><h3>Automated Customer Support</h3><p>AI call & text bots that handle FAQs, triage, routing, and escalations.</p><ul class="bullets"><li>Voice & SMS coverage</li><li>Brand-safe tone</li><li>Clear escalation paths</li></ul></article>
+    <article class="card reveal"><div class="icon"></div><h3>Automated Appointment Setters</h3><p>Bookings, confirmations, reminders, and reschedules—fully automated.</p><ul class="bullets"><li>Reduce no-shows</li><li>Improve conversion speed</li><li>Fewer manual touches</li></ul></article>
+    <article class="card reveal"><div class="icon"></div><h3>Custom Automations</h3><p>Bespoke builds by application only—limited capacity to ensure quality.</p><ul class="bullets"><li>Strategy + build</li><li>Monitoring & updates</li><li>Dedicated support</li></ul></article>
+  </div>
+</div></section>
+
+<section class="section alt"><div class="container">
+  <div class="section-head reveal"><h2>Before & after</h2><p>How automation changes the day-to-day.</p></div>
+  <div class="grid" style="grid-template-columns:1fr 1fr">
+    <article class="card reveal"><h3>Old flow</h3><ul class="bullets"><li>Missed calls and slow replies</li><li>Manual appointment coordination</li><li>Inconsistent follow-ups</li></ul></article>
+    <article class="card reveal"><h3>Automated flow</h3><ul class="bullets"><li>Calls & SMS answered 24/7</li><li>Instant booking + reminders</li><li>Fast handoffs to staff</li></ul></article>
+  </div>
+  <div style="margin-top:1.2rem"> <a class="btn outline" href="contact.html">Contact</a></div>
+</div></section>
+</main>
+
+
+<footer class="tbx-footer">
+  <div class="container f-wrap">
+    <div class="f-brand"><img src="logo.png" alt="Thinkbotics logo"> 
+      <div class="f-logo">Thinkbotics</div>
+      <div class="f-tag">Automation that books, replies, and reduces errors. <a href="mailto:thinkbotics1@gmail.com">thinkbotics1@gmail.com</a></div>
+    </div>
+    <nav class="f-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="process.html">Process</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="f-cta">
+      <a class="btn btn-primary" href="https://calendly.com/fbaaklini13/30min">Book a Demo</a>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <span>© 2025 Thinkbotics</span>
+    <span>All rights reserved</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+// /* mobile nav toggle */
+(function(){
+  var btn = document.querySelector('.mobile-toggle');
+  var nav = document.querySelector('header nav');
+  if(btn && nav){
+    btn.addEventListener('click', function(){
+      nav.classList.toggle('open');
+      document.body.classList.toggle('menu-open');
+    });
+  }
+})();
+</script>
+</body>
+</html>
